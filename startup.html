@@ -1,1 +1,88 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose Your Startup — FOUNDER</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="startup">
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><div class="brand-mark">F</div><div><div class="brand-name">FOUNDER</div><div class="brand-sub">BUILD YOUR EMPIRE</div></div></a>
+    <div>
+      <div class="nav-label">MANAGEMENT</div>
+      <nav class="nav">
+        <a href="index.html">◫ Dashboard</a>
+        <a href="products.html">◇ Products</a>
+        <a href="office.html">⌂ Office & Team</a>
+        <a href="finances.html">↗ Finances</a>
+        <a class="active" href="startup.html">＋ New Company</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom muted small">FOUNDER · Version 0.1</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">CHAPTER 01 · THE BEGINNING</div>
+        <h1>Choose your startup</h1>
+        <div class="muted">Every great company starts with a decision.</div>
+      </div>
+      <div class="pill">Starting cash: $500</div>
+    </header>
+
+    <div class="notice" style="margin-bottom:20px">
+      Select carefully. Your choice determines your initial product costs, customer demand and business strategy.
+    </div>
+
+    <section class="grid three-col">
+      <article class="card business-choice">
+        <div class="icon-box">💻</div>
+        <div><div class="eyebrow">OPTION 01</div><h2 style="margin-top:7px">Digital Software</h2></div>
+        <p class="muted">Build digital tools and software products. Development takes time, but each sale can have low delivery costs.</p>
+        <div class="list">
+          <div class="money-row"><span class="muted">Development cost</span><strong>$150</strong></div>
+          <div class="money-row"><span class="muted">Sales potential</span><strong class="green">High</strong></div>
+          <div class="money-row"><span class="muted">Difficulty</span><strong>Medium</strong></div>
+        </div>
+        <button class="btn btn-primary" onclick="startBusiness('software')">Choose Software →</button>
+      </article>
+
+      <article class="card business-choice">
+        <div class="icon-box">🎨</div>
+        <div><div class="eyebrow">OPTION 02</div><h2 style="margin-top:7px">Creative Agency</h2></div>
+        <p class="muted">Create branding and design work for clients. Projects can bring in cash quickly, but you must keep finding customers.</p>
+        <div class="list">
+          <div class="money-row"><span class="muted">Development cost</span><strong>$80</strong></div>
+          <div class="money-row"><span class="muted">Sales potential</span><strong>Steady</strong></div>
+          <div class="money-row"><span class="muted">Difficulty</span><strong>Easy</strong></div>
+        </div>
+        <button class="btn btn-primary" onclick="startBusiness('agency')">Choose Agency →</button>
+      </article>
+
+      <article class="card business-choice">
+        <div class="icon-box">📦</div>
+        <div><div class="eyebrow">OPTION 03</div><h2 style="margin-top:7px">Product Startup</h2></div>
+        <p class="muted">Design physical products and sell them. Manufacturing and stock cost money, but successful products can scale.</p>
+        <div class="list">
+          <div class="money-row"><span class="muted">Development cost</span><strong>$200</strong></div>
+          <div class="money-row"><span class="muted">Sales potential</span><strong class="green">High</strong></div>
+          <div class="money-row"><span class="muted">Difficulty</span><strong>Hard</strong></div>
+        </div>
+        <button class="btn btn-primary" onclick="startBusiness('product')">Choose Product →</button>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:20px">
+      <h2>How to get started</h2>
+      <p class="muted">1. Choose your business. 2. Develop your first product. 3. Set a price and marketing budget. 4. Return to the dashboard and advance the day to start making sales.</p>
+      <div class="btn-row"><a class="btn" href="index.html">Back to Dashboard</a><button class="btn btn-danger" onclick="resetGame()">Reset Saved Game</button></div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
