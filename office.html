@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Office & Team — FOUNDER</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="office">
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><div class="brand-mark">F</div><div><div class="brand-name">FOUNDER</div><div class="brand-sub">BUILD YOUR EMPIRE</div></div></a>
+    <div><div class="nav-label">MANAGEMENT</div><nav class="nav">
+      <a href="index.html">◫ Dashboard</a><a href="products.html">◇ Products</a><a class="active" href="office.html">⌂ Office & Team</a><a href="finances.html">↗ Finances</a><a href="startup.html">＋ New Company</a>
+    </nav></div>
+    <div class="sidebar-bottom muted small">FOUNDER · Version 0.1</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow">YOUR WORKSPACE</div><h1>Office & team</h1><div class="muted">Build a better place to work.</div></div><div class="pill" id="office-cash">$500 available</div></header>
+
+    <section id="office-locked" class="card" hidden><h2>Start your company first</h2><p class="muted">Choose a business to unlock upgrades and hiring.</p><a class="btn btn-primary" href="startup.html">Choose Startup →</a></section>
+
+    <div id="office-content">
+      <section class="card">
+        <div class="card-head"><div><div class="eyebrow">CURRENT WORKSPACE</div><h2 id="office-name" style="margin-top:7px">Bedroom Office</h2></div><span class="pill" id="office-stage">LEVEL 1</span></div>
+        <div class="grid two-col">
+          <div>
+            <div class="icon-box" style="width:60px;height:60px;font-size:27px">🖥️</div>
+            <h2 style="margin-top:15px" id="office-title">Your bedroom desk</h2>
+            <p class="muted" id="office-description">A laptop, a desk and plenty of ambition.</p>
+            <div class="money-row"><span class="muted">Productivity bonus</span><strong class="green" id="office-bonus">+0%</strong></div>
+            <div class="money-row"><span class="muted">Employees</span><strong id="team-count">0</strong></div>
+          </div>
+          <div class="notice">
+            <strong>Grow at the right time</strong><br>
+            Upgrades can help your business perform better, but they don't directly earn money. Keep a cash reserve before investing.
+          </div>
+        </div>
+      </section>
+
+      <section class="grid two-col" style="margin-top:18px">
+        <article class="card">
+          <div class="card-head"><h2>Workspace upgrades</h2><span class="pill">INVEST</span></div>
+          <div class="list">
+            <div class="list-item">
+              <div class="item-left"><div class="icon-box">🖥️</div><div><div class="item-title">Professional equipment</div><div class="item-desc">Improve productivity by 15%. One-time purchase.</div><div class="green small" style="margin-top:7px">$250</div></div></div>
+              <button class="btn" id="equipment-button" onclick="buyUpgrade('equipment')">Buy</button>
+            </div>
+            <div class="list-item">
+              <div class="item-left"><div class="icon-box">🏢</div><div><div class="item-title">Small home office</div><div class="item-desc">Unlock the next stage and improve productivity by 20%.</div><div class="green small" style="margin-top:7px">$400</div></div></div>
+              <button class="btn" id="home-office-button" onclick="buyUpgrade('homeOffice')">Buy</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><h2>Build your team</h2><span class="pill">HIRING</span></div>
+          <div class="list">
+            <div class="list-item">
+              <div class="item-left"><div class="icon-box">🎨</div><div><div class="item-title">Junior specialist</div><div class="item-desc">Helps improve product quality. Salary: $25/day.</div><div class="muted small" style="margin-top:7px">Hiring cost: $100</div></div></div>
+              <button class="btn" id="hire-button" onclick="hireEmployee()">Hire</button>
+            </div>
+          </div>
+          <div class="notice" style="margin-top:18px">Wages are deducted every in-game day. Hire when your revenue can support the extra cost.</div>
+          <div class="list" id="employee-list" style="margin-top:12px"><div class="empty">You haven't hired anyone yet.</div></div>
+        </article>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
