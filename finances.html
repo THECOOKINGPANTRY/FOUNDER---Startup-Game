@@ -1,1 +1,58 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finances — FOUNDER</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="finances">
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><div class="brand-mark">F</div><div><div class="brand-name">FOUNDER</div><div class="brand-sub">BUILD YOUR EMPIRE</div></div></a>
+    <div><div class="nav-label">MANAGEMENT</div><nav class="nav">
+      <a href="index.html">◫ Dashboard</a><a href="products.html">◇ Products</a><a href="office.html">⌂ Office & Team</a><a class="active" href="finances.html">↗ Finances</a><a href="startup.html">＋ New Company</a>
+    </nav></div>
+    <div class="sidebar-bottom muted small">FOUNDER · Version 0.1</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow">FINANCIAL OVERVIEW</div><h1>Company finances</h1><div class="muted">Understand where your money comes from and where it goes.</div></div><div class="pill" id="finance-day">DAY 1</div></header>
+
+    <section id="finance-locked" class="card" hidden><h2>No financial records yet</h2><p class="muted">Start your business to begin tracking your finances.</p><a class="btn btn-primary" href="startup.html">Choose Startup →</a></section>
+
+    <div id="finance-content">
+      <section class="grid stats-grid">
+        <div class="card"><div class="stat-label">Available Cash</div><div class="stat-value green" id="finance-cash">$500</div><div class="muted small">Current balance</div></div>
+        <div class="card"><div class="stat-label">Lifetime Revenue</div><div class="stat-value" id="finance-revenue">$0</div><div class="muted small">All sales to date</div></div>
+        <div class="card"><div class="stat-label">Lifetime Expenses</div><div class="stat-value red" id="finance-expenses">$0</div><div class="muted small">All recorded costs</div></div>
+        <div class="card"><div class="stat-label">Net Operating Profit</div><div class="stat-value" id="finance-profit">$0</div><div class="muted small">Revenue less operating expenses</div></div>
+      </section>
+
+      <section class="grid two-col" style="margin-top:18px">
+        <div class="card">
+          <div class="card-head"><h2>Financial summary</h2><span class="pill">ALL TIME</span></div>
+          <div class="money-row"><span class="muted">Product development</span><strong id="expense-development">$0</strong></div>
+          <div class="money-row"><span class="muted">Marketing</span><strong id="expense-marketing">$0</strong></div>
+          <div class="money-row"><span class="muted">Wages</span><strong id="expense-wages">$0</strong></div>
+          <div class="money-row"><span class="muted">Upgrades & hiring</span><strong id="expense-upgrades">$0</strong></div>
+          <div class="money-row"><span class="muted">Other operating costs</span><strong id="expense-other">$0</strong></div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h2>Daily performance</h2><span class="pill">RECENT DAYS</span></div>
+          <div id="finance-history" class="list"><div class="empty">Advance the day to generate your first financial results.</div></div>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top:18px">
+        <h2>Financial advice</h2>
+        <p class="muted" id="finance-advice">Start a company to receive financial advice.</p>
+        <div class="btn-row"><a href="index.html" class="btn">← Return to Dashboard</a><button class="btn btn-danger" onclick="resetGame()">Reset Saved Game</button></div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
